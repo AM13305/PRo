@@ -1,0 +1,326 @@
+/* Importing 'Poppins' font from Google Fonts with various weights and styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Global Reset and Base Styles */
+* {
+    font-family: "Poppins", sans-serif; /* Set global font */
+    margin: 0;                          /* Remove default margin */
+    padding: 0;                         /* Remove default padding */
+    box-sizing: border-box;            /* Include padding and border in element's total width/height */
+    scroll-behavior: smooth;           /* Smooth scrolling for anchor links */
+}
+
+/* Header Section Styling */
+header {
+    width: 100%;                       /* Full width */
+    z-index: 999;                      /* Ensures header stays on top */
+    position: fixed;                   /* Fixes header during scrolling */
+    background-color: #f0f0f0;         /* Light gray background */
+    display: flex;                     /* Enables flex layout */
+    justify-content: space-between;   /* Space between logo and navigation */
+    padding: 10px 200px;               /* Vertical and horizontal padding */
+    align-items: center;              /* Vertically center content */
+}
+
+/* Logo Styling */
+.logo {
+    text-decoration: none;            /* Remove underline from text/link */
+    color: crimson;                   /* Set text color */
+    text-transform: uppercase;        /* Convert text to uppercase */
+    font-weight: 700;                 /* Bold text */
+    font-size: 1.8em;                 /* Relative font size (1em = 16px by default) */
+    /* Note: 'em' is relative to the parent element’s font size */
+}
+
+/* Navigation Links Styling */
+.Navigation a {
+    color: crimson;                   /* Set link color */
+    text-decoration: none;            /* Remove underline */
+    font-size: 1.2em;                 /* Slightly larger text */
+    font-weight: 500;                 /* Medium font weight */
+    padding-left: 30px;               /* Spacing between nav items */
+}
+/* WhEn Touching THe word its color Changed */
+.Navigation a:hover{
+    color: rgb(114, 27, 27);
+}
+
+section{
+     padding: 100px 200px;
+}
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;       /* Aligns text to the left side */
+    padding: 100px 200px;
+    position: relative;
+    background: url("jeremy-bishop-G9i_plbfDgk-unsplash.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main-content {
+    max-width: 600px;
+    color: white;
+    z-index: 1;
+}
+
+.top-image {
+    position: absolute;
+    bottom: 50px;
+    right: 5px;
+    width: 400px;
+    z-index: 0;
+}
+
+.main h2 {
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+.main h2 span {
+    display: inline-block;
+    color: crimson;
+    font-size: 1.7em;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.main h3 {
+    color: blanchedalmond;
+    font-size: 1em;
+    font-weight: 700;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 40 px;
+}
+
+.MainButton {
+    text-decoration: none;
+    letter-spacing: 1px;              /* FIXED: no space */
+    color: white;
+    background-color: crimson;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;       /* FIXED: no spaces inside value */
+    border-radius: 15px;
+    margin-bottom: 40px;              /* FIXED: no space */
+    margin-top: 30px;
+    transition: 0.7s ease;
+}
+.MainButton:hover{
+    background-color:rgb(107, 15, 33) ;
+    transform: scale(1.1,1.1);
+
+}
+
+.Contact a {
+    font-size: 30px;
+    margin-right: 15px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.Contact a:hover {
+    color: crimson;
+}
+.Cards{
+    background-color: white;
+    width: 100%;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    color: crimson;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 20px;
+
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.card{
+    background-color: rgb(255, 255, 255);
+    width: 21.25em;
+    border-radius: 10px;
+    padding:25 px;
+    margin: 15px;
+    transition: 0.7s ease;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+}
+.card:hover
+{
+    transform: scale(1.1);
+
+}
+.icon{
+    color: crimson;
+    font-size: 8em;
+    text-align: center;
+}
+.info{
+    text-align: center;
+}
+.info h3{
+    margin-bottom: 10px;
+    color: darkmagenta;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+.info p{
+    margin-left: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.Projects{
+    background-color: black;
+}
+
+.Projects .content{
+    margin-top: 30px;
+    
+}
+.ProjectCard{
+    background-color: white;
+    border: 1px solid white;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease0;
+}
+.ProjectCard:hover{
+    transform: scale(1.1);
+}
+.ProjectIcon {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.ProjectIcon img{
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.ProjectInfo{
+    padding: 1em;
+}
+
+.ProjectType{
+    font-size: 0.8em;
+    color: black;
+}
+
+.ProjectTitle{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.MoreDetails{
+    text-decoration: none;
+   color: crimson;
+}
+
+.MoreDetails:hover{
+    color:rgb(72, 18, 29) ;
+}
+
+.CardsContact .icon{
+    font-size: 4.5em;
+}
+
+.CardsContact .info h3{
+    color: black;
+}
+
+.CardsContact .info p{
+    font-size: 1.5em;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.OwnerTitle{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.OwnerTitle span{
+    color: crimson;
+}
+
+
+@media (max-width:1023px)
+{
+    header{
+        padding: 12px 20px;
+
+    }
+    .Navigation{
+        padding-left: 10px;
+    }
+    .title{
+        font-size: 1.8em;
+    }
+    section{
+        padding: 80px 20px;
+    }
+    .main-content h2{
+        font-size: 1em;
+    }
+    .main-content h3{
+        font-size: 1.6em;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width:641px)
+{
+    body{
+        font-size: 12px;
+        /* 1em=12px */
+        /* default 1em=16px */
+    }
+
+    .main-content h2{
+        font-size: 0.8em;
+    }
+    .main-content h3{
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width:300px)
+{
+    body{
+        font-size: 10px;
+        /* 1em=10px */
+        /* default 1em=16px */
+    }
+
+}
